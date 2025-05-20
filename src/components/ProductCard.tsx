@@ -53,9 +53,9 @@ export function ProductCard({ product }: ProductCardProps) {
           {product.description}
         </CardDescription>
         <div className="flex items-baseline gap-2">
-          <p className="text-xl font-semibold text-primary">${product.price.toFixed(2)}</p>
+          <p className="text-xl font-semibold text-primary">₦{(product.price*1600).toFixed(2)}</p>
           {product.originalPrice && (
-            <p className="text-sm text-muted-foreground line-through">${product.originalPrice.toFixed(2)}</p>
+            <p className="text-sm text-muted-foreground line-through">₦{(product.originalPrice*1600).toFixed(2)}</p>
           )}
         </div>
       </CardContent>

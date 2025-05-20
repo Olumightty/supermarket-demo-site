@@ -44,7 +44,7 @@ export function CartItemRow({ item }: CartItemRowProps) {
         </div>
         <div>
           <p className="font-medium">{item.name}</p>
-          <p className="text-sm text-muted-foreground">${item.price.toFixed(2)} each</p>
+          <p className="text-sm text-muted-foreground">₦{(item.price * 1600).toFixed(2)} each</p>
         </div>
       </TableCell>
       <TableCell>
@@ -65,7 +65,7 @@ export function CartItemRow({ item }: CartItemRowProps) {
           </Button>
         </div>
       </TableCell>
-      <TableCell className="text-right font-medium">${(item.price * item.quantity).toFixed(2)}</TableCell>
+      <TableCell className="text-right font-medium">${(item.price * item.quantity * 1600).toFixed(2)}</TableCell>
       <TableCell className="text-right">
         <Button variant="ghost" size="icon" onClick={handleRemoveItem} className="text-destructive hover:text-destructive/80" aria-label={`Remove ${item.name} from cart`}>
           <Trash2 size={20} />

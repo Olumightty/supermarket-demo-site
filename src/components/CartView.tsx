@@ -68,20 +68,20 @@ export function CartView() {
           <CardContent className="space-y-3">
             <div className="flex justify-between">
               <span>Subtotal</span>
-              <span>${subtotal.toFixed(2)}</span>
+              <span>₦{(subtotal*1600).toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span>Shipping</span>
-              <span>${shipping.toFixed(2)}</span>
+              <span>₦{(shipping*1600).toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span>Taxes ({(taxRate * 100).toFixed(0)}%)</span>
-              <span>${taxes.toFixed(2)}</span>
+              <span>₦{(taxes*1600).toFixed(2)}</span>
             </div>
             <Separator />
             <div className="flex justify-between font-bold text-lg">
               <span>Total</span>
-              <span>${total.toFixed(2)}</span>
+              <span>₦{(total*1600).toFixed(2)}</span>
             </div>
           </CardContent>
           <CardFooter className="flex-col gap-2">

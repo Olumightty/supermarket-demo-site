@@ -180,26 +180,26 @@ export function CheckoutForm() {
               {cartState.items.map(item => (
                 <div key={item.id} className="flex justify-between text-sm">
                   <span>{item.name} (x{item.quantity})</span>
-                  <span>${(item.price * item.quantity).toFixed(2)}</span>
+                  <span>₦{(item.price * item.quantity * 1600).toFixed(2)}</span>
                 </div>
               ))}
               <hr/>
               <div className="flex justify-between">
                 <span>Subtotal</span>
-                <span>${subtotal.toFixed(2)}</span>
+                <span>₦{(subtotal * 1600).toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span>Shipping</span>
-                <span>${shipping.toFixed(2)}</span>
+                <span>₦{(shipping *1600).toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span>Taxes ({(taxRate * 100).toFixed(0)}%)</span>
-                <span>${taxes.toFixed(2)}</span>
+                <span>₦{(taxes * 1600).toFixed(2)}</span>
               </div>
               <hr/>
               <div className="flex justify-between font-bold text-lg">
                 <span>Total</span>
-                <span>${total.toFixed(2)}</span>
+                <span>₦{(total * 1600).toFixed(2)}</span>
               </div>
             </CardContent>
             <CardFooter>

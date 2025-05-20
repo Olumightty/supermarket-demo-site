@@ -8,7 +8,7 @@ export const products: Product[] = [
     description: 'Crisp and juicy apples, perfect for a healthy snack.',
     price: 2.49, // Sale price
     originalPrice: 2.99, // Original price
-    image: 'https://placehold.co/400x300.png',
+    image: '/apples.jpeg',
     dataAiHint: 'apples fruit',
     tag: 'SALE',
   },
@@ -17,7 +17,7 @@ export const products: Product[] = [
     name: 'Organic Bananas',
     description: 'A bunch of ripe, organic bananas.',
     price: 1.99,
-    image: 'https://placehold.co/400x300.png',
+    image: '/banana.jpeg',
     dataAiHint: 'bananas fruit',
   },
   {
@@ -25,7 +25,7 @@ export const products: Product[] = [
     name: 'Whole Wheat Bread',
     description: 'Healthy and delicious whole wheat bread.',
     price: 3.49,
-    image: 'https://placehold.co/400x300.png',
+    image: '/wheat-bread.jpeg',
     dataAiHint: 'bread bakery',
     tag: 'NEW',
   },
@@ -35,7 +35,7 @@ export const products: Product[] = [
     description: 'A dozen large free-range eggs.',
     price: 4.59, // Sale price
     originalPrice: 4.99, // Original price
-    image: 'https://placehold.co/400x300.png',
+    image: '/eggs.jpeg',
     dataAiHint: 'eggs farm',
     tag: 'SALE',
   },
@@ -44,7 +44,7 @@ export const products: Product[] = [
     name: 'Almond Milk',
     description: 'Unsweetened almond milk, dairy-free alternative.',
     price: 3.29,
-    image: 'https://placehold.co/400x300.png',
+    image: '/almond-milk.jpeg',
     dataAiHint: 'milk alternative',
   },
   {
@@ -52,7 +52,7 @@ export const products: Product[] = [
     name: 'Avocado',
     description: 'Ripe and creamy avocados, sold individually.',
     price: 1.79,
-    image: 'https://placehold.co/400x300.png',
+    image: '/avocado.jpeg',
     dataAiHint: 'avocado fruit',
   },
   {
@@ -61,7 +61,7 @@ export const products: Product[] = [
     description: 'Fresh bundle of organic spinach leaves.',
     price: 2.29,
     originalPrice: 2.49,
-    image: 'https://placehold.co/400x300.png',
+    image: '/spinach.jpeg',
     dataAiHint: 'spinach vegetable',
     tag: 'SALE',
   },
@@ -70,7 +70,7 @@ export const products: Product[] = [
     name: 'Dark Chocolate Bar',
     description: 'Rich 70% cocoa dark chocolate bar.',
     price: 3.99,
-    image: 'https://placehold.co/400x300.png',
+    image: '/dark-chocolate.jpeg',
     dataAiHint: 'chocolate snack',
   },
 ];

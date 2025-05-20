@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning> {/* suppressHydrationWarning might be needed if dark/light theme causes issues initially */}
+    <html lang="en" suppressHydrationWarning >
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
         <AppProviders>
           <div className="min-h-screen flex flex-col bg-background">

@@ -36,7 +36,7 @@ export default async function HomePage() {
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-lg">
         <Image
-          src="https://placehold.co/1600x600.png"
+          src="/hero.jpg"
           alt="Fresh fruits and pastries"
           layout="fill"
           objectFit="cover"
@@ -46,9 +46,9 @@ export default async function HomePage() {
         />
         <div className="absolute inset-0 bg-black/40 z-10" /> {/* Dark overlay for text contrast */}
         <div className="relative z-20 h-full flex flex-col justify-center items-start p-8 md:p-16 text-background">
-          <p className="text-lg md:text-xl mb-2 text-accent">Starting at $2.49</p>
+          <p className="text-lg md:text-xl mb-2 text-accent">Starting at ₦3,000</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Explore fresh & <br /> juicy fruits
+            Explore the market <br /> fresh foods available
           </h1>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link href="#products">
