@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'MarketSim',
   description: 'A simulated e-commerce experience by MarketSim.',
+  icons:{
+    icon: '/logo.svg'
+  }
 };
 
 export default function RootLayout({
